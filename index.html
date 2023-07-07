@@ -1,165 +1,310 @@
 <!DOCTYPE html>
 <html lang="en-gb">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Sanif Mujawar" />
-    <title>Sanif Mujawar // SRE/DevOps Web-Developer</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <meta
+      name="description"
+      content="Sanif Mujawar - Bootstrap portfolio web site"
+    />
+    <title>Bootstrap portfolio</title>
+    <!-- Bootstrap stylesheet  5-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5f6acac718.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
   <body>
-    <!-- main logo / nav -->
+    <!-- Offcanvas dark navbar -->
     <header>
-      <h1><a href="index.html">Sanif Mujawar</a></h1>
-      <nav>
-        <ul class="topNav">
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-          <li><a href="./Sanif_Resume_UK.pdf">Resume</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sanif Mujawar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
+
+      <!--Jumbotron Hero Section  -->
+
+      <section id="hero" class="container-fluid background-image">
+        <h2 class="hero p-2">"Building Reliable Foundations: Empowering SRE and DevOps Excellence."</h2>
+      </section>
     </header>
 
-    <!-- hero banner -->
-    <section class="hero-banner">
-      <div>
-        <h2>"Building Reliable Foundations: Empowering SRE and DevOps Excellence"</h2>
-      </div>
-    </section>
-
-    <main class="container">
-      <!-- about me -->
-      <section class="page-section" id="about">
+    <!--About Me Section  -->
+    <main>
+      <section id="about" class="scroll">
+        <hr />
         <h2>About Me</h2>
       </section>
       <section>
-        <img class="profile" src="images/sanif1-removebg.png" alt="profile image">
-        <p>
-          Site Reliability Engineer with years of experience designing, building, and maintaining high-performance, scalable, and reliable systems. Proficient in programming and monitoring tools, I excel in implementing microservices, CI/CD pipelines, and automation scripts. I am adept at troubleshooting and resolving complex technical issues while ensuring minimum downtime. My passion lies in continuously improving systems and processes to drive efficiency and enhance user experience.
-        </p>
-        <br />
-        <p>
-          Currently, I am seeking opportunities to utilize my skills and make a positive impact in a challenging and dynamic work environment. Throughout my career, I have gained valuable experience in various roles. As a Lead Engineer at NatWest Group and a Senior Site Reliability Engineer at Zycus, I have demonstrated my expertise in AWS provisioning, designing AWS solutions, and migrating hybrid cloud to Amazon Web Services (AWS). Additionally, I have worked on developing AI monitoring tools, implementing DevOps-based self-healing mechanisms, and utilizing containerization technologies like Docker and Kubernetes.
-        </p>
-        <br />
-        <p>
-          In my previous roles, I have been responsible for diagnosing complex technical problems, implementing middleware configurations, and providing solutions for performance management and disaster recovery. I have a solid foundation in Linux administration and have successfully deployed applications through CI/CD pipelines using tools like Jenkins, GOCD, and Jira. Collaborating with team members, I have gained experience in debugging issues related to Akamai, ActiveMQ, and virtual machines. I am well-versed in using monitoring tools such as Opsgenie, Icinga, Dynatrace, Grafana, and Monit to ensure system stability and performance.
-        </p>
+        <div class="container clearfix">
+          <img
+            class="col-4 col-sm-3 col-md-2 float-start mb-3 me-3"
+            src="images/sanif1-removebg.pngs"
+            alt="profile image"
+          />
+          <p>
+            Site Reliability Engineer with years of experience designing, building, and maintaining high-performance, scalable, and reliable systems. Proficient in programming and monitoring tools, I excel in implementing microservices, CI/CD pipelines, and automation scripts. I am adept at troubleshooting and resolving complex technical issues while ensuring minimum downtime. My passion lies in continuously improving systems and processes to drive efficiency and enhance user experience.
+          </p>
+          <br />
+          <p>
+            Currently, I am seeking opportunities to utilize my skills and make a positive impact in a challenging environment. Throughout my career, I have gained valuable experience in various roles. As a Lead Engineer at NatWest Group and a Senior Site Reliability Engineer at Zycus, I have demonstrated expertise in AWS provisioning, designing AWS solutions, and migrating hybrid cloud to Amazon Web Services (AWS). Additionally, I have worked on developing AI monitoring tools, implementing self-healing mechanisms, and utilizing containerization technologies like Docker and Kubernetes.
+          </p>
+          <br />
+          <p>
+            In my previous roles, I have been responsible for diagnosing complex technical problems, implementing middleware configurations, and providing solutions for performance management and disaster recovery. I have a solid foundation in Linux administration and have successfully deployed applications through CI/CD pipelines using tools like Jenkins, GOCD, and Jira. Collaborating with team members, I have gained experience in debugging issues related to Akamai, ActiveMQ, and virtual machines. I am well-versed in using monitoring tools such as Opsgenie, Icinga, Dynatrace, Grafana, and Monit to ensure system stability and performance.
+          </p>
+        </div>
       </section>
 
-      <!-- portfolio container -->
-      <section class="page-section" id="work">
+      <!-- Cards  Section-->
+
+      <section id="work" class="scroll">
+        <hr />
         <h2>Work</h2>
+        <div class="container">
+          <div class="row g-5">
+            <div class="card col-md-4 col-sm-6 border-0">
+              <img
+                src="./images/02-portfolio-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+
+            <div class="card col-md-4 col-sm-6 border-0">
+              <img
+                src="./images/02-portfolio-2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+
+            <div class="card col-md-4 col-sm-6 border-0">
+              <img
+                src="./images/02-portfolio-3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+
+            <div class="card col-md-4 col-sm-6 border-0">
+              <img
+                src="./images/02-portfolio-4.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+
+            <div class="card col-md-4 col-sm-6 border-0">
+              <img
+                src="./images/02-portfolio-5.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+
+            <div class="card col-md-4 col-sm-6 border-0">
+              <img
+                src="./images/portfolio-6.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row end -->
       </section>
 
-      <section id="portfolio">
-        <figure class="p0">
-          <a href="https://sanifmujawar.github.io/code-refactor/" target="_blank">
-            <img
-              src="./images/screenshot_horiseon.jpg"
-              alt="Horiseon Website Screenshot"
-              width="500"
-              height="400"
-            />
-            <figcaption>
-              <h3>Horiseon</h3>
-              <p>Social Media Marketing</p>
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="p1">
-          <a href="http://www.globaljapimports.com/" target="_blank">
-            <img
-              src="./images/globaljap.png"
-              alt="Global Jap Imports Website"
-              width="500"
-              height="200"
-            />
-            <figcaption>
-              <h3>Global Jap Imports</h3>
-              <p>Driving Your Dreams, Importing Japanese Excellence</p>
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="p2">
-          <a href="https://github.com/sanifmujawar/Hangman.git" target="_blank" >
-            <img
-              src="images/hangman.png"
-              alt="The Hangman Game Screenshot"
-              width="500"
-              height="200"
-            />
-            <figcaption>
-              <h3>The Hangman Game</h3>
-              <p>Pyhton</p>
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="p3">
-          <a href="https://goo.gl/maps/VqT8oqxJbZQYBg7B6" target="_blank">
-            <img
-              src="images/simplotechsolutions.png"
-              alt="Simplotech Solutions Screenshot"
-              width="500"
-              height="200"
-            />
-            <figcaption>
-              <h3>Simplotech Solutions</h3>
-              <p>The IT Expert</p>
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="p4">
-          <a href="http://www.sanifmujawar.com.s3-website-us-east-1.amazonaws.com/">
-            <img
-              src="images/sanif portfolio.png"
-              alt="Sanif Mujawar Screenshot"
-              width="500"
-              height="200"
-            />
-            <figcaption>
-              <h3>Sanif Mujawar</h3>
-              <p>HTML/CSS/Bootstrap</p>
-            </figcaption>
-          </a>
-        </figure>
-      </section>
+      <!-- Skills section  -->
 
-      <!-- contact -->
-      <section class="page-section" id="contact">
-        <h2>Contact Me</h2>
-      </section>
-      <section>
-        <ul class="bottomNav">
-          <li><a href="tel:+44 7507509997">+44 7507509997</a></li>
-          <li>
-            <a href="mailto:sanifmujawar@gmail.com">sanifmujawar@gmail.com</a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/sanifmujawar"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/sanif-mujawar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/FtH7D-MNebg" rel="noopener noreferrer">YouTube</a>
-          </li>
-        </ul>
+      <section id="skills" class="scroll">
+        <hr />
+        <h2>Skills</h2>
+
+        <div class="container text-center">
+          <div class="list-unstyled row justify-content-evenly">
+            <div class="col-4">
+              <i
+                class="fa-brands fa-html5 fa-7x text-danger"
+                aria-hidden="true"
+              ></i>
+              <p>HTML</p>
+            </div>
+            <div class="col-4">
+              <i
+                class="fa-brands fa-css3-alt fa-7x text-primary"
+                aria-hidden="true"
+              ></i>
+              <p>CSS</p>
+            </div>
+            <div class="col-4">
+              <i
+                class="fa-brands fa-bootstrap fa-7x text-info"
+                aria-hidden="true"
+              ></i>
+              <p>Bootstrap</p>
+            </div>
+            <div class="col-4">
+              <i
+                class="fa-brands fa-js fa-7x text-warning"
+                aria-hidden="true"
+              ></i>
+              <p>Javascript</p>
+            </div>
+            <div class="col-4">
+              <i
+                class="fa-brands fa-node fa-7x text-success"
+                aria-hidden="true"
+              ></i>
+              <p>Node.js</p>
+            </div>
+            <div class="col-4">
+              <i
+                class="fa-brands fa-react fa-7x text-info"
+                aria-hidden="true"
+              ></i>
+              <p>React</p>
+            </div>
+            <div class="col-4">
+              <i class="fa-brands fa-square-git fa-7x" aria-hidden="true"></i>
+              <p>Git</p>
+            </div>
+            <div class="col-4">
+              <i class="fa-brands fa-github fa-7x" aria-hidden="true"></i>
+              <p>GitHub</p>
+            </div>
+            <div class="col-4">
+              <i class="fa-brands fa-gitlab fa-7x" aria-hidden="true"></i>
+              <p>GitLab</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- Contact Section -->
+    <footer>
+      <section id="contact" class="scroll">
+        <hr />
+        <h2>Contact Me</h2>
+      </section>
+      <div
+        class="container p-3 gap-2 d-grid d-md-flex flex-row flex-wrap justify-content-around"
+      >
+        <a href="tel:+44 7507509997" class="btn btn-light"
+          ><i class="fa fa-phone-square" aria-hidden="true"></i>+44 7507509997</a
+        >
+        <a href="mailto:sanifmujawar@gmail.com" class="btn btn-light"
+          ><i class="fa fa-envelope-square" aria-hidden="true"></i>
+          sanifmujawar@gmail.com</a
+        >
+        <a
+          href="https://github.com/sanifmujawar"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-light"
+        >
+          <i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a
+        >
+        <a
+          href="https://youtu.be/FtH7D-MNebg"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-light"
+          ><i class="fa fa-youtube-square" aria-hidden="true"></i> YouTube</a
+        >
+        <a
+          href="https://www.linkedin.com/in/sanif-mujawar/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-light"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a
+        >
+      </div>
+    </footer>
+    <!-- container end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
